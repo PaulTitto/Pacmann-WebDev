@@ -1,5 +1,5 @@
 # Menggunakan base image yang sesuai
-FROM python:3.10
+FROM python:3.9
 
 # Menentukan direktori kerja di dalam container
 WORKDIR /app
