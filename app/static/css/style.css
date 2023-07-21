@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background-color: #D8AA92;
+    border: 0px;
+}
+
+#btn-login,
+#liveToastBtn {
+    height: 48px;
+}
+
+#btn-login:hover {
+    background-color: #D8AA92;
+    opacity: 0.5
+}
+
+#liveToastBtn:hover {
+    background-color: #D8AA92;
+    opacity: 0.5;
+}
+
+a {
+    color: #DD8433;
+}
+
+#logo-container {
+    margin-bottom: 78px;
+}
+
+#select-project {
+    width: 50%;
+}
+
+.btn-primary {
+    background-color: #D8AA92;
+    border: 0px;
+}
+
+.navbar-brand img {
+    width: 256px;
+}
+
+#btn-add:hover {
+    background-color: #D8AA92;
+    opacity: 0.5;
+}
+
+#btn-add-project:hover {
+    background-color: #D8AA92;
+    opacity: 0.5;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.badge {
+    background-color: #D8AA92;
+}
+
+#nav-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.badge {
+    border: 0px;
+    padding: 8px 6px;
+}
+
+article {
+    border-radius: 12px;
+}
+
+#nav-container,
+
