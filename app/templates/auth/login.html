@@ -1,0 +1,49 @@
+{% extends '/auth/base.html' %}
+
+{% block content %}
+
+<section class="container w-50 bg-white rounded p-5">
+    <form id="form-login">
+      <!-- Toast Start -->
+      <div
+        aria-live="polite"
+        aria-atomic="true"
+        class="bg-primary position-relative bd-example-toasts"
+      >
+        <div
+          class="toast-container p-3 top-0 start-50 translate-middle-x"
+          id="toastPlacement"
+        >
+          <div
+            class="toast align-items-center text-bg-danger border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            id="live-toast"
+          >
+            <div class="d-flex">
+              <div class="toast-body" id="toast-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Toast End -->
+      
+      <div class="mb-3">
+        <label for="login-email" class="form-label">Alamat Email</label>
+        <input type="email" class="form-control" id="login-email" placeholder="Masukkan email Anda disini..." />
+      </div>
+      <div class="mb-3">
+        <label for="login-password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="login-password" placeholder="Masukkan password Anda disini..." />
+      </div>
+      <p class="mb-5">Belum punya akun? <a href="{{url_for('frontend.register')}}">Daftar di sini</a></p>
+      <button type="submit" class="btn btn-primary w-100" id="btn-login">
+        Masuk
+      </button>
+    </form>
+  </section>
+
+  <script src="{{url_for('static', filename="/js/script-login.js")}}"></script>
+
+{% endblock %}

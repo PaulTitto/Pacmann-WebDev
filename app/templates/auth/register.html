@@ -1,0 +1,65 @@
+{% extends '/auth/base.html' %} {% block content %}
+<section class="container w-50 bg-white rounded p-5">
+  <form id="form-register">
+    <!-- bagian toast error-->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="bg-dark position-relative bd-example-toasts"
+    >
+      <div
+        class="toast-container p-3 top-0 start-50 translate-middle-x"
+        id="toastPlacement"
+      >
+        <div class="toast text-bg-danger" id="live-toast">
+          <div class="toast-body" id="toast-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end bagian toast -->
+    <!-- bagian toast success-->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="bg-dark position-relative bd-example-toasts"
+    >
+      <div
+        class="toast-container p-3 top-0 start-50 translate-middle-x"
+        id="toastPlacement"
+      >
+        <div class="toast text-bg-success" id="live-toast-success">
+          <div class="toast-body" id="toast-body-success"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end bagian toast -->
+    <h1 class="text-center mb-5">Registration Page</h1>
+    <div class="mb-3">
+      <label for="name" class="form-label">Nama Lengkap</label>
+      <input type="text" class="form-control" id="name" 
+      placeholder="Masukkan nama Anda disini..."/>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" 
+      placeholder="Masukkan email Anda disini..."/>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" 
+      placeholder="Masukkan password Anda disini..."/>
+    </div>
+    <div class="mb-3">
+      <label for="confirm_password" class="form-label">Konfirmasi Password</label>
+      <input type="password" class="form-control" id="confirm_password" 
+      placeholder="Masukkan ulang password Anda disini..."/>
+    </div>
+    <p class="mb-5">Sudah punya akun? <a href="{{url_for('frontend.login')}}">Masuk di sini</a></p>
+    <button type="submit" class="btn btn-primary w-100" id="liveToastBtn">
+      Daftar
+    </button>
+  </form>
+</section>
+
+<script src="{{url_for('static', filename="/js/script-register.js")}}"></script>
+{% endblock %}
